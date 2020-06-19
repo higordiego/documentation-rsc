@@ -72,6 +72,7 @@ Uma vez tendo finalizado as modificações necessárias, é hora de disponibiliz
 
 
 ```imagem aqui```
+
 - Por fim, ainda **dentro da branch ‘development’**, rode o comando **‘git merge XXX-dddd-001’**.
 
 
