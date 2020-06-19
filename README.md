@@ -124,6 +124,10 @@ Uma vez as alterações tendo sido testadas e aprovadas pelo Q.A, é hora de dis
 
 - Atualize o branch homolog remota com o comando **‘git push origin homolog’** de **dentro da branch homolog local**.
 
+```imagem aqui ```
+
+ Como na etapa anterior, agora basta entrar no servidor onde o projeto está rodando em homologação e, de **dentro da branch homolog**, rodar o comando **‘git pull origin homolog’**.
+
 
 
 
