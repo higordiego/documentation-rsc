@@ -80,7 +80,7 @@ Uma vez tendo finalizado as modificações necessárias, é hora de disponibiliz
 
 ```imagem aqui```
 
-<h4><strong>AGORA, CUIDADO!</strong></h4> Veja que no nosso exemplo, há um conflito de merge que deverá ser analisado manualmente. Lembre-se que a branch development possui alterações que podem ainda não estar presente na branch homolog e, por isso, esses conflitos podem ocorrer. Neste caso, analise com muito cuidado e, se necessário, converse com os demais desenvolvedores. 
+<h2><strong>AGORA, CUIDADO!</strong></h2> Veja que no nosso exemplo, há um conflito de merge que deverá ser analisado manualmente. Lembre-se que a branch development possui alterações que podem ainda não estar presente na branch homolog e, por isso, esses conflitos podem ocorrer. Neste caso, analise com muito cuidado e, se necessário, converse com os demais desenvolvedores. 
 
 
 
