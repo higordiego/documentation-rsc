@@ -71,4 +71,8 @@ Uma vez tendo finalizado as modificações necessárias, é hora de disponibiliz
 - Atualize a branch ‘development’ local com os commits da própria branch ‘development’ remota. Assim, garantimos que no momento do merge nenhum commit anterior ficará de fora. **Dentro da branch development**, rode o comando **‘git pull origin development’**.
 
 
+```imagem aqui```
+- Por fim, ainda **dentro da branch ‘development’**, rode o comando **‘git merge XXX-dddd-001’**.
+
+
 
