@@ -26,4 +26,4 @@ O estado inicial do projeto, por tanto, encontra-se da seguinte forma:
 
 Você, como desenvolvedor, acaba de receber uma nova demanda de manutenção solicitada pelo cliente. A história no azure possui o código XXX-dddd-001. Partindo do pressuposto que o repositório do projeto encontra-se em seu computador, com as 3 branches principais **(master, homolog e development)** atualizadas, você está pronto para iniciar o fluxo de desenvolvimento (Caso ainda não possua o repositório do projeto clonado em seu computador, consulte o passo 3 do Apêndice A. Caso possua o repositório clonado, mas as branches principais estejam desatualizadas, consulte o Apêndice B para mais informações de como atualizar uma branche local).
 
-Dentro da pasta raiz do repositório local, certifique-se de que você está dentro da branch **homolog** com o comando ‘git status’. Caso não esteja, rode o comando ‘git checkout **homolog’** para navegar até a branch **homolog**.
+Dentro da pasta raiz do repositório local, certifique-se de que você está dentro da branch homolog com o comando ‘git status’. Caso não esteja, rode o comando ‘git checkout homolog’ para navegar até a branch homolog.
