@@ -78,4 +78,9 @@ Uma vez tendo finalizado as modificações necessárias, é hora de disponibiliz
 - Por fim, ainda **dentro da branch ‘development’**, rode o comando **‘git merge XXX-dddd-001’**.
 
 
+```imagem aqui```
+
+<h1><strong>AGORA, CUIDADO!</strong></h1> Veja que no nosso exemplo, há um conflito de merge que deverá ser analisado manualmente. Lembre-se que a branch development possui alterações que podem ainda não estar presente na branch homolog e, por isso, esses conflitos podem ocorrer. Neste caso, analise com muito cuidado e, se necessário, converse com os demais desenvolvedores. 
+
+
 
