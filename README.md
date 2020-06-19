@@ -42,3 +42,33 @@ Dentro da branch homolog, crie uma nova branch com o código da ficha do Jira co
 ## Aplicando as correções necessárias
 
 Certifique-se de estar dentro da branch XXX-dddd-001 com o comando **‘git status’**. Abra o seu editor de código e inicie a correção solicitada, realizando todos os testes necessários de forma local. Para exemplificar, considere que foram realizadas as seguintes alterações no arquivo index.js:
+
+```imagem aqui ```
+
+Quando as modificações necessárias para a manutenção forem concluídas, é hora de fazer o commit. **Lembre-se**: evite de acumular muitas alterações em um único commit pois isso dificulta a rastreabilidade das alterações do projeto.
+
+Ainda dentro da branch XXX-dddd-001, rode o comando **‘git status’** e note que os arquivos com alterações pendentes de commit serão listados:
+
+```imagem aqui ```
+
+Para confirmar as alterações, rode o comando **‘git add .’** (note que o ponto faz parte do comando. Ele indica que deverá ser adicionado todos os arquivos modificados). Para confirmar que o comando anterior funcionou, rode novamente o comando o **‘git status’**.
+
+```imagem aqui ```
+
+ Por fim, realize o commit da modificação realizada com o comando **‘git commit -m “<comentário_da_alteração>”’**, seguido da atualização do repositório remoto com **‘git push origin XXX-dddd-001’**.
+
+ ```imagem aqui ```
+
+
+## Disponibilizando as alterações para testes do Q.A
+
+Uma vez tendo finalizado as modificações necessárias, é hora de disponibilizar suas correções para o ambiente de teste do Q.A, ou seja, passar as alterações realizadas para a branch ‘development’. Realize a seguinte sequência de passos:
+
+- Atualize a sua branch XXX-dddd-001 com os commits da branch homolog. Assim, caso a branch homolog tenha sido atualizada por outro desenvolvedor durante o seu desenvolvimento, garantimos que todas as alterações já testadas pelo Q.A continuarão presentes. **Dentro da branch XXX-dddd-001** rode o comando **‘git pull origin homolog’**.
+
+```imagem aqui```
+
+- Atualize a branch ‘development’ local com os commits da própria branch ‘development’ remota. Assim, garantimos que no momento do merge nenhum commit anterior ficará de fora. **Dentro da branch development**, rode o comando **‘git pull origin development’**.
+
+
+
