@@ -10,7 +10,7 @@ Foi definido que em um cenário comum, o repositório de um projeto terá 3 bran
  - **Homolog**: nesta branch, estará a versão que está sendo homologada pelo cliente, ou seja, última etapa antes de ir para produção.
  - **Development**: aqui estará a versão mais recente do projeto, com todas as features recém desenvolvidas que ainda estão passando pelos testes de Q.A. Ou seja, aqui estarão as features que o cliente solicitou, mas que ainda não estão disponível para homologação.
 
- Porém, lembre-se de que **não se deve realizar alterações diretamente nestas branches**, salvo em casos de **urgência** e com a **aprovação** do gestor. Para o desenvolvimento de manutenções e novas features, deverá ser criada novas branches, baseadas na branch ‘homolog’, com o código da ficha do **Azure** que se referem a aquele desenvolvimento, para a realização do merge posteriormente, como será demonstrado a seguir.
+ Porém, lembre-se de que **não se deve realizar alterações diretamente nestas branches**, salvo em casos de **urgência** e com a **aprovação** do gestor. Para o desenvolvimento de manutenções e novas features, deverá ser criada novas branches, baseadas na branch **‘homolog’**, com o código da ficha do **Azure** que se referem a aquele desenvolvimento, para a realização do merge posteriormente, como será demonstrado a seguir.
 
 
 ## Passo-a-passo do processo de desenvolvimento
