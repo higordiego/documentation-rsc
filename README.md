@@ -120,7 +120,7 @@ Uma vez as alterações tendo sido testadas e aprovadas pelo Q.A, é hora de dis
 
 ```imagem aqui```
 
-**Lembre-se**: sempre que um merge é realizado, conflitos podem acontecer como aconteceu na etapa anterior. Se isso ocorrer, reforçamos a necessidade de uma análise cuidadosa para que nenhuma correção anterior seja “matada” pela atual.
+**Lembre-se**: Sempre que um merge é realizado, conflitos podem acontecer como aconteceu na etapa anterior. Se isso ocorrer, reforçamos a necessidade de uma análise cuidadosa para que nenhuma correção anterior seja “matada” pela atual.
 
 - Atualize o branch homolog remota com o comando **‘git push origin homolog’** de **dentro da branch homolog local**.
 
