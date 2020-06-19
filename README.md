@@ -32,7 +32,7 @@ Dentro da pasta raiz do repositório local, certifique-se de que você está den
 
 ```Imagem aqui```
 
-Dentro da branch homolog, crie uma nova branch com o código da ficha do Jira com o comando ‘git checkout -b XXX-dddd-001’.
+Dentro da branch homolog, crie uma nova branch com o código da ficha do Jira com o comando **‘git checkout -b XXX-dddd-001’**.
 
 ```imagem aqui```
 
