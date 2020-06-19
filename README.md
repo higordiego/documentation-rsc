@@ -87,5 +87,28 @@ Veja qual é o conflito neste nosso exemplo:
 
 ```imagem aqui```
 
+Analisando, descobrimos que há uma nova função no arquivo index.js, a another_calc, que ainda está sendo testada pelo Q.A, e por isso, ainda não estava disponível na branch homolog quando fizemos a última atualização. Neste caso, não podemos apagar esta função, ela deverá ser mantida no arquivo. Por tanto, após análise, o arquivo index.js deverá ficar da seguinte forma:
+
+```imagem aqui```
+
+Caso um conflito de merge tenha ocorrido, após realizar a correção, siga os seguintes passos:
+
+- Rode o comando **‘git add .’** para adicionar às mudanças e, em seguida, rode o comando **‘git commit -m “<comentário_do_conflito_resolvido>”’**.
+
+```imagem aqui ```
+
+- Atualize a branch development remota com o comando **‘git push origin development’**.
+
+```imagem aqui```
+
+Note que, até aqui, tudo foi realizado em sua máquina local, pois devemos sempre evitar fazer acessos aos servidores para outras atividades que não seja deploy. Assim sendo, o último passo para enfim disponibilizar as alterações no ambiente de teste do Q.A, é atualizar o repositório local do servidor. Para isso, basta rodar o comando **‘git pull origin development’** de **dentro da própria branch development**, no prompt de comando do servidor onde o projeto está rodando para teste.
+
+
+## Disponibilizando as alterações para Homologação do cliente.
+
+Uma vez as alterações tendo sido testadas e aprovadas pelo Q.A, é hora de disponibilizar as alterações para o cliente testar, ou seja, realizar o merge com a branch homolog. Da mesma forma que anteriormente, vamos começar executando o processo em nossa máquina local antes de acessar o servidor. Siga os seguintes passos:
+
+- Como antes, atualize a sua branch XXX-dddd-001 com a branch homolog remota. Rode o comando **‘git pull origin homolog’** de **dentro da branch XXX-dddd-001**.
+
 
 
