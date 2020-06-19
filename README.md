@@ -110,5 +110,20 @@ Uma vez as alterações tendo sido testadas e aprovadas pelo Q.A, é hora de dis
 
 - Como antes, atualize a sua branch XXX-dddd-001 com a branch homolog remota. Rode o comando **‘git pull origin homolog’** de **dentro da branch XXX-dddd-001**.
 
+```imagem aqui```
+
+- Em seguida, atualize a sua branch homolog local com a branch homolog remota. Rode o comando **‘git pull origin homolog’** de **dentro da branch homolog**.
+
+```imagem aqui```
+
+- Por fim, **dentro da branch homolog**, rode o comando **‘git merge XXX-dddd-001’**.
+
+```imagem aqui```
+
+**Lembre-se**: sempre que um merge é realizado, conflitos podem acontecer como aconteceu na etapa anterior. Se isso ocorrer, reforçamos a necessidade de uma análise cuidadosa para que nenhuma correção anterior seja “matada” pela atual.
+
+- Atualize o branch homolog remota com o comando **‘git push origin homolog’** de **dentro da branch homolog local**.
+
+
 
 
