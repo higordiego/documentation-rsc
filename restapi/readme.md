@@ -83,13 +83,26 @@ http://host/alterar/10
 Utilizaremos DELETE quando o contrato tenha o intuito de:
 * [x] Para deletar os dados
 
-# Verbos HTTP
-```O protocolo HTTP define métodos (às vezes referidos como verbos) para indicar a ação desejada a ser realizada no recurso identificado. O que este recurso representa, se são dados pré-existentes ou dados gerados dinamicamente, depende da implementação do servidor. Muitas vezes, o recurso corresponde a um arquivo ou a saída de um executável residente no servidor. (fonte Wikipedia)```
+# Respostas HTTP
 
-Utilizaremos os seguintes [verbos HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status):
+Os códigos de status das respostas HTTP indicam se uma requisição HTTP foi corretamente concluída. 
+As respostas são agrupadas em cinco classes:
+
+Respostas de informação (100-199),
+Respostas de sucesso (200-299),
+Redirecionamentos (300-399)
+Erros do cliente (400-499)
+Erros do servidor (500-599).
+
+Os status abaixo são definidos pela seção 10 da RFC 2616. 
+Você pode encontrar uma versão atualizada da especificação na RFC 7231.
+
+(fonte MDN)
+
+Utilizaremos os seguintes [status HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status):
 
 * - [x] **201** - ```A requisição foi bem sucedida e um novo recurso foi criado como resultado. Esta é uma típica resposta enviada após uma requisição POST.```
-* - [x] **200** - ```Estas requisição foi bem sucedida. O significado do sucesso varia de acordo com o método HTTP```
+* - [x] **200** - ```Esta requisição foi bem sucedida. O significado do sucesso varia de acordo com o método HTTP```
 * - [x] **400** - ```Essa resposta significa que o servidor não entendeu a requisição pois está com uma sintaxe inválida.```
 * - [x] **401** - ```Embora o padrão HTTP especifique "unauthorized", semanticamente, essa resposta significa "unauthenticated". Ou seja, o cliente deve se autenticar para obter a resposta solicitada.```
 * - [x] **404** - ```O servidor não pode encontrar o recurso solicitado. Este código de resposta talvez seja o mais famoso devido à frequência com que acontece na web.```
