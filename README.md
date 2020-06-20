@@ -38,11 +38,11 @@ Dentro da pasta raiz do repositório local, certifique-se de que você está den
 
 ![index.js](./imagens/3.png)
 
-Dentro da branch homolog, crie uma nova branch com o código da ficha do Jira com o comando **‘git checkout -b XXX-dddd-001’**. <br>
+Dentro da branch homolog, crie uma nova branch com o código da ficha do azure com o comando **‘git checkout -b XXX-dddd-001’**. <br>
 
 ![index.js](./imagens/4.png)
 
-**Lembre-se**: Em uma situação normal, sempre faremos o desenvolvimento de uma manutenção ou nova feature baseada na branch homolog, pois a branch master tende a ser muito defasada em relação a homolog, e a branch development tende a ser muito instável uma vez que outras features estão sendo testadas pelo Q.A e pode sofrer mudanças com uma alta frequência. Além disso, utilizamos o código da ficha do Jira como nome da branch para fins de rastreabilidade e auditoria. 
+**Lembre-se**: Em uma situação normal, sempre faremos o desenvolvimento de uma manutenção ou nova feature baseada na branch homolog, pois a branch master tende a ser muito defasada em relação a homolog, e a branch development tende a ser muito instável uma vez que outras features estão sendo testadas pelo Q.A e pode sofrer mudanças com uma alta frequência. Além disso, utilizamos o código da ficha do azure como nome da branch para fins de rastreabilidade e auditoria. 
 
 
 ## Aplicando as correções necessárias.
