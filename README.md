@@ -188,23 +188,24 @@ Como última etapa, é realizado o merge da homolog com a master, para que aquil
 
 - Realize o processo de commit do novo arquivo como se segue:
 
+![index.js](./imagens/31.png)
 
 
 - Realize o push, para atualizar o repositório remoto com os novos commits:
 
-
+![index.js](./imagens/32.png)
 
 - Ainda na pasta do projeto, e ainda na branch homolog, crie uma nova branch chamada **‘development’**:
 
-
+![index.js](./imagens/33.png)
 
 - Modifique o arquivo index.js conforme exemplo:
 
-
+![index.js](./imagens/34.png)
 
 - Realize o commit do novo arquivo na branch development, seguido do push para atualização do repositório remoto:
 
-
+![index.js](./imagens/35.png)
 
 ## Apêndice B - Atualizando uma branch local
 
