@@ -49,13 +49,13 @@ Dentro da branch homolog, crie uma nova branch com o código da ficha do Jira co
 
 Certifique-se de estar dentro da branch XXX-dddd-001 com o comando **‘git status’**. Abra o seu editor de código e inicie a correção solicitada, realizando todos os testes necessários de forma local. Para exemplificar, considere que foram realizadas as seguintes alterações no arquivo index.js:
 
-```imagem aqui ```
+![index.js](./imagens/5.png)
 
 Quando as modificações necessárias para a manutenção forem concluídas, é hora de fazer o commit. **Lembre-se**: evite de acumular muitas alterações em um único commit pois isso dificulta a rastreabilidade das alterações do projeto.
 
 Ainda dentro da branch XXX-dddd-001, rode o comando **‘git status’** e note que os arquivos com alterações pendentes de commit serão listados:
 
-```imagem aqui ```
+![index.js](./imagens/6.png)
 
 Para confirmar as alterações, rode o comando **‘git add .’** (note que o ponto faz parte do comando. Ele indica que deverá ser adicionado todos os arquivos modificados). Para confirmar que o comando anterior funcionou, rode novamente o comando o **‘git status’**.
 
