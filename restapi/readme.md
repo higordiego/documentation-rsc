@@ -1,4 +1,4 @@
-# Contratos de Chamadas de Api
+# Contratos de Chamadas de API
 
 
 # Métodos HTTP
@@ -18,12 +18,12 @@ Para envio de dados vamos utilizar o formato [JSON](https://www.devmedia.com.br/
 
 # Assinaturas de envio.
 
-Esses são os tipos de envios que será abordado na comunicação de frontend com backend.
+Esses são os tipos de envios que será abordado na comunicação de Front-end com Back-end.
 
 ## Método POST
 No método [POST](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST) iremos utilizar o seguinte formato:
 
-Url de envio:
+URL de envio:
 ```fetch
 http://host/criar
 ```
@@ -44,7 +44,7 @@ Utilizaremos POST quando o contrato tenha o intuito de:
 ## Método GET
 No método [GET](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/GET) iremos utilizar o seguinte formato:
 
-url de envio
+URL de envio
 ```fetch
 http://host/consultar?nome=teste
 ```
@@ -55,7 +55,7 @@ Utilizaremos GET quando o contrato tenha o intuito de:
 ## Método PUT
 No método [PUT](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PUT) iremos utilizar o seguinte formato:
 
-Url de envio:
+URL de envio:
 ```fetch
 http://host/alterar/10
 ```
@@ -75,7 +75,7 @@ Utilizaremos PUT quando o contrato tenha o intuito de:
 ## Método DELETE
 No método [DELETE](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/DELETE) iremos utilizar o seguinte formato:
 
-Url de envio:
+URL de envio:
 ```fetch
 http://host/alterar/10
 ```
@@ -100,7 +100,7 @@ Todos os responses da API terá que vim no status code do [headers](https://deve
 
 
 # Retorno Esperados
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 200/201.
+Retorno da API em caso de [Status Code](https://httpstatuses.com/) 200/201.
 
 ```json
 {
@@ -108,7 +108,7 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 200/201.
 }
 ```
 
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 400 com parâmetros inválidos ou nulos.
+Retorno da API em caso de [Status Code](https://httpstatuses.com/) 400 com parâmetros inválidos ou nulos.
 
 ```json 
 {
@@ -121,7 +121,7 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 400 com parâ
 ```
 
 
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 404 com erro.
+Retorno da API em caso de [Status Code](https://httpstatuses.com/) 404 com erro.
 
 ```json
   {
@@ -133,7 +133,7 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 404 com erro.
   }
 ```
 
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 401 com erro.
+Retorno da API em caso de [Status Code](https://httpstatuses.com/) 401 com erro.
 
 ```json
 {
@@ -146,7 +146,7 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 401 com erro.
 ```
 
 
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 403 com erro.
+Retorno da API em caso de [Status Code](https://httpstatuses.com/) 403 com erro.
 
 ```json
   {
@@ -158,7 +158,7 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 403 com erro.
   }
 ```
 
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 500 com erro.
+Retorno da API em caso de [Status Code](https://httpstatuses.com/) 500 com erro.
 
 ```json
   {
@@ -171,6 +171,6 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 500 com erro.
 ```
 
 # Tempo de requisição
-As requisições feitas para api terá o [timeout](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/408) de 3 segundos.
+As requisições feitas para API terá o [timeout](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/408) de 3 segundos.
 
 
