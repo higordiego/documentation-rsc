@@ -72,11 +72,9 @@ Uma vez tendo finalizado as modificações necessárias, é hora de disponibiliz
 
 - Atualize a branch ‘development’ local com os commits da própria branch ‘development’ remota. Assim, garantimos que no momento do merge nenhum commit anterior ficará de fora. **Dentro da branch development**, rode o comando **‘git pull origin development’**.
 
-
 ```imagem aqui```
 
 - Por fim, ainda **dentro da branch ‘development’**, rode o comando **‘git merge XXX-dddd-001’**.
-
 
 ```imagem aqui```
 
@@ -128,6 +126,73 @@ Uma vez as alterações tendo sido testadas e aprovadas pelo Q.A, é hora de dis
 
  Como na etapa anterior, agora basta entrar no servidor onde o projeto está rodando em homologação e, de **dentro da branch homolog**, rodar o comando **‘git pull origin homolog’**.
 
+
+## Disponibilizando as alterações para Produção
+
+Como última etapa, é realizado o merge da homolog com a master, para que aquilo que foi homologado e aprovado pelo cliente seja posto em produção. Neste caso, realizamos o merge diretamente com a homolog, uma vez que nesta etapa a solicitação parte do cliente após a finalização de seus próprios testes.
+
+- Atualize sua branch master local com a branch master remota. Rode o comando **‘git pull origin master’** de **dentro da branch master**.
+
+```imagem aqui```
+
+- Atualize a sua branch homolog local com a branch homolog remota. Rode o comando **‘git pull origin homolog’** de **dentro da branch homolog**.
+
+```imagem aqui ```
+
+- Realize o merge com o comando **‘git merge homolog’** de **dentro da branch master**.
+
+```imagem aqui```
+
+- Atualize a branch master remota com o comando **‘git push origin master’** de **dentro da branch master**.
+
+```imagem aqui```
+
+- No servidor de produção, atualize a branch master com o comando **‘git pull origin master’** de **dentro da branch master**.
+
+
+## Apêndice A - Criando o estado inicial do projeto de exemplo.
+
+- Em sua conta da Azure, crie o projeto **XXX-dddd**.
+
+```imagem aqui```
+
+- Inicialize o repositório Git do projeto da Azure:
+
+```imagem aqui```
+
+- Clone o repositório em sua máquina.
+
+```imagem aqui```
+
+- Agora, dentro da pasta do projeto em seu computador, **crie a branch homolog**.
+
+```imagem aqui```
+
+- Crie o arquivo index.js conforme exemplo:
+
+```imagem aqui```
+
+- Realize o processo de commit do novo arquivo como se segue:
+
+```imagem aqui```
+
+- Realize o push, para atualizar o repositório remoto com os novos commits:
+
+```imagem aqui```
+
+- Ainda na pasta do projeto, e ainda na branch homolog, crie uma nova branch chamada **‘development’**:
+
+```imagem aqui```
+
+- Modifique o arquivo index.js conforme exemplo:
+
+```imagem aqui```
+
+- Realize o commit do novo arquivo na branch development, seguido do push para atualização do repositório remoto:
+
+```imagem aqui```
+
+## Apêndice B - Atualizando uma branch local
 
 
 
