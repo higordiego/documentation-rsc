@@ -22,7 +22,7 @@ O estado inicial do projeto, por tanto, encontra-se da seguinte forma:
 
   - Branch master: **vazia**
   - Arquivo **index.js** na branch **homolog** (versão sendo atualmente homologada pelo cliente):
-  ```Imagem aqui```
+  [index.js](./imagens/1.png)
   - Arquivo index.js na branch **development** (versão sendo atualmente testada pelo Q.A):
   ```Imagem aqui```
 
