@@ -34,13 +34,13 @@ O estado inicial do projeto, por tanto, encontra-se da seguinte forma:
 
 Você, como desenvolvedor, acaba de receber uma nova demanda de manutenção solicitada pelo cliente. A história no azure possui o código XXX-dddd-001. Partindo do pressuposto que o repositório do projeto encontra-se em seu computador, com as 3 branches principais **(master, homolog e development)** atualizadas, você está pronto para iniciar o fluxo de desenvolvimento (Caso ainda não possua o repositório do projeto clonado em seu computador, consulte o passo 3 do Apêndice A. Caso possua o repositório clonado, mas as branches principais estejam desatualizadas, consulte o Apêndice B para mais informações de como atualizar uma branche local).
 
-Dentro da pasta raiz do repositório local, certifique-se de que você está dentro da branch homolog com o comando ‘git status’. Caso não esteja, rode o comando ‘git checkout homolog’ para navegar até a branch homolog.
+Dentro da pasta raiz do repositório local, certifique-se de que você está dentro da branch homolog com o comando ‘git status’. Caso não esteja, rode o comando ‘git checkout homolog’ para navegar até a branch homolog.<br>
 
-```Imagem aqui```
+![index.js](./imagens/3.png)
 
-Dentro da branch homolog, crie uma nova branch com o código da ficha do Jira com o comando **‘git checkout -b XXX-dddd-001’**.
+Dentro da branch homolog, crie uma nova branch com o código da ficha do Jira com o comando **‘git checkout -b XXX-dddd-001’**. <br>
 
-```imagem aqui```
+![index.js](./imagens/4.png)
 
 **Lembre-se**: Em uma situação normal, sempre faremos o desenvolvimento de uma manutenção ou nova feature baseada na branch homolog, pois a branch master tende a ser muito defasada em relação a homolog, e a branch development tende a ser muito instável uma vez que outras features estão sendo testadas pelo Q.A e pode sofrer mudanças com uma alta frequência. Além disso, utilizamos o código da ficha do Jira como nome da branch para fins de rastreabilidade e auditoria. 
 
