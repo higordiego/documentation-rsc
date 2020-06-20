@@ -194,5 +194,12 @@ Como última etapa, é realizado o merge da homolog com a master, para que aquil
 
 ## Apêndice B - Atualizando uma branch local
 
+Na pasta raíz do projeto em seu computador, e **dentro da branch que você deseja atualizar**, rode o comando **‘git pull origin <nome_da_branch>’**. Desta forma, a branch especificada em sua máquina será atualizada com os novos commits disponíveis do repositório remoto.
+Por tanto, caso você deseje atualizar a branch homolog com os commits da própria branch homolog do repositório remoto, rode o comando ‘git pull origin homolog’ estando dentro da branch homolog em seu computador. Caso deseje atualizar uma branch x com os commits da branch homolog do repositório remoto, rode o comando **‘git pull origin homolog’** estando **dentro da branch x** em seu computador.
+
+
+## Apêndice C - Diagrama do resumo do processo
+
+```imagem aqui ```
 
 
