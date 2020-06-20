@@ -72,22 +72,22 @@ Uma vez tendo finalizado as modificações necessárias, é hora de disponibiliz
 
 - Atualize a sua branch XXX-dddd-001 com os commits da branch homolog. Assim, caso a branch homolog tenha sido atualizada por outro desenvolvedor durante o seu desenvolvimento, garantimos que todas as alterações já testadas pelo Q.A continuarão presentes. **Dentro da branch XXX-dddd-001** rode o comando **‘git pull origin homolog’**.
 
-```imagem aqui```
+![index.js](./imagens/9.png)
 
 - Atualize a branch ‘development’ local com os commits da própria branch ‘development’ remota. Assim, garantimos que no momento do merge nenhum commit anterior ficará de fora. **Dentro da branch development**, rode o comando **‘git pull origin development’**.
 
-```imagem aqui```
+![index.js](./imagens/10.png)
 
 - Por fim, ainda **dentro da branch ‘development’**, rode o comando **‘git merge XXX-dddd-001’**.
 
-```imagem aqui```
+![index.js](./imagens/11.png)
 
 <h2><strong>AGORA, CUIDADO!</strong></h2> 
 Veja que no nosso exemplo, há um conflito de merge que deverá ser analisado manualmente. Lembre-se que a branch development possui alterações que podem ainda não estar presente na branch homolog e, por isso, esses conflitos podem ocorrer. Neste caso, analise com muito cuidado e, se necessário, converse com os demais desenvolvedores. 
 
 Veja qual é o conflito neste nosso exemplo:
 
-```imagem aqui```
+![index.js](./imagens/12.png)
 
 Analisando, descobrimos que há uma nova função no arquivo index.js, a another_calc, que ainda está sendo testada pelo Q.A, e por isso, ainda não estava disponível na branch homolog quando fizemos a última atualização. Neste caso, não podemos apagar esta função, ela deverá ser mantida no arquivo. Por tanto, após análise, o arquivo index.js deverá ficar da seguinte forma:
 
