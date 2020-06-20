@@ -91,17 +91,17 @@ Veja qual é o conflito neste nosso exemplo:
 
 Analisando, descobrimos que há uma nova função no arquivo index.js, a another_calc, que ainda está sendo testada pelo Q.A, e por isso, ainda não estava disponível na branch homolog quando fizemos a última atualização. Neste caso, não podemos apagar esta função, ela deverá ser mantida no arquivo. Por tanto, após análise, o arquivo index.js deverá ficar da seguinte forma:
 
-```imagem aqui```
+![index.js](./imagens/13.png)
 
 Caso um conflito de merge tenha ocorrido, após realizar a correção, siga os seguintes passos:
 
 - Rode o comando **‘git add .’** para adicionar às mudanças e, em seguida, rode o comando **‘git commit -m “<comentário_do_conflito_resolvido>”’**.
 
-```imagem aqui ```
+![index.js](./imagens/14.png)
 
 - Atualize a branch development remota com o comando **‘git push origin development’**.
 
-```imagem aqui```
+![index.js](./imagens/15.png)
 
 Note que, até aqui, tudo foi realizado em sua máquina local, pois devemos sempre evitar fazer acessos aos servidores para outras atividades que não seja deploy. Assim sendo, o último passo para enfim disponibilizar as alterações no ambiente de teste do Q.A, é atualizar o repositório local do servidor. Para isso, basta rodar o comando **‘git pull origin development’** de **dentro da própria branch development**, no prompt de comando do servidor onde o projeto está rodando para teste.
 
@@ -112,21 +112,21 @@ Uma vez as alterações tendo sido testadas e aprovadas pelo Q.A, é hora de dis
 
 - Como antes, atualize a sua branch XXX-dddd-001 com a branch homolog remota. Rode o comando **‘git pull origin homolog’** de **dentro da branch XXX-dddd-001**.
 
-```imagem aqui```
+![index.js](./imagens/16.png)
 
 - Em seguida, atualize a sua branch homolog local com a branch homolog remota. Rode o comando **‘git pull origin homolog’** de **dentro da branch homolog**.
 
-```imagem aqui```
+![index.js](./imagens/17.png)
 
 - Por fim, **dentro da branch homolog**, rode o comando **‘git merge XXX-dddd-001’**.
 
-```imagem aqui```
+![index.js](./imagens/18.png)
 
 **Lembre-se**: Sempre que um merge é realizado, conflitos podem acontecer como aconteceu na etapa anterior. Se isso ocorrer, reforçamos a necessidade de uma análise cuidadosa para que nenhuma correção anterior seja “matada” pela atual.
 
 - Atualize o branch homolog remota com o comando **‘git push origin homolog’** de **dentro da branch homolog local**.
 
-```imagem aqui ```
+![index.js](./imagens/19.png)
 
  Como na etapa anterior, agora basta entrar no servidor onde o projeto está rodando em homologação e, de **dentro da branch homolog**, rodar o comando **‘git pull origin homolog’**.
 
@@ -137,19 +137,19 @@ Como última etapa, é realizado o merge da homolog com a master, para que aquil
 
 - Atualize sua branch master local com a branch master remota. Rode o comando **‘git pull origin master’** de **dentro da branch master**.
 
-```imagem aqui```
+![index.js](./imagens/20.png)
 
 - Atualize a sua branch homolog local com a branch homolog remota. Rode o comando **‘git pull origin homolog’** de **dentro da branch homolog**.
 
-```imagem aqui ```
+![index.js](./imagens/21.png)
 
 - Realize o merge com o comando **‘git merge homolog’** de **dentro da branch master**.
 
-```imagem aqui```
+![index.js](./imagens/22.png)
 
 - Atualize a branch master remota com o comando **‘git push origin master’** de **dentro da branch master**.
 
-```imagem aqui```
+![index.js](./imagens/23.png)
 
 - No servidor de produção, atualize a branch master com o comando **‘git pull origin master’** de **dentro da branch master**.
 
