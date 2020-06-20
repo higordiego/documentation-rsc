@@ -158,43 +158,43 @@ Como última etapa, é realizado o merge da homolog com a master, para que aquil
 
 - Em sua conta da Azure, crie o projeto **XXX-dddd**.
 
-```imagem aqui```
+![index.js](./imagens/24.png)
 
 - Inicialize o repositório Git do projeto da Azure:
 
-```imagem aqui```
+![index.js](./imagens/25.png)
 
 - Clone o repositório em sua máquina.
 
-```imagem aqui```
+![index.js](./imagens/26.png)
 
 - Agora, dentro da pasta do projeto em seu computador, **crie a branch homolog**.
 
-```imagem aqui```
+![index.js](./imagens/27.png)
 
 - Crie o arquivo index.js conforme exemplo:
 
-```imagem aqui```
+![index.js](./imagens/28.png)
 
 - Realize o processo de commit do novo arquivo como se segue:
 
-```imagem aqui```
+![index.js](./imagens/29.png)
 
 - Realize o push, para atualizar o repositório remoto com os novos commits:
 
-```imagem aqui```
+![index.js](./imagens/30.png)
 
 - Ainda na pasta do projeto, e ainda na branch homolog, crie uma nova branch chamada **‘development’**:
 
-```imagem aqui```
+![index.js](./imagens/31.png)
 
 - Modifique o arquivo index.js conforme exemplo:
 
-```imagem aqui```
+![index.js](./imagens/32.png)
 
 - Realize o commit do novo arquivo na branch development, seguido do push para atualização do repositório remoto:
 
-```imagem aqui```
+![index.js](./imagens/23.png)
 
 ## Apêndice B - Atualizando uma branch local
 
