@@ -24,7 +24,7 @@ O estado inicial do projeto, por tanto, encontra-se da seguinte forma:
   - Arquivo **index.js** na branch **homolog** (versão sendo atualmente homologada pelo cliente):
   ![index.js](./imagens/1.png)
   - Arquivo index.js na branch **development** (versão sendo atualmente testada pelo Q.A):
-  ```Imagem aqui```
+  ![index.js](./imagens/2.png)
 
 ## Iniciando o desenvolvimento de uma nova demanda.
 
