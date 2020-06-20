@@ -1,1 +1,1 @@
-## Documentação de caso de Uso.
+## Documentação dos Casos de Uso.
