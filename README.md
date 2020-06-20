@@ -21,14 +21,14 @@ Para a demonstração do fluxo do processo de desenvolvimento, vamos tomar como 
 O estado inicial do projeto, por tanto, encontra-se da seguinte forma:
 
   - Branch master: **vazia**
-  - Arquivo **index.js** na branch **homolog** (versão sendo atualmente homologada pelo cliente):
+  - Arquivo **index.js** na branch **homolog** (versão sendo atualmente homologada pelo cliente): <br>
 
   ![index.js](./imagens/1.png)
 
-  - Arquivo index.js na branch **development** (versão sendo atualmente testada pelo Q.A):
+  - Arquivo index.js na branch **development** (versão sendo atualmente testada pelo Q.A): <br>
 
   ![index.js](./imagens/2.png)
-  
+
 
 ## Iniciando o desenvolvimento de uma nova demanda.
 
