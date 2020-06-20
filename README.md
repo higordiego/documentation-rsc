@@ -59,11 +59,11 @@ Ainda dentro da branch XXX-dddd-001, rode o comando **‘git status’** e note 
 
 Para confirmar as alterações, rode o comando **‘git add .’** (note que o ponto faz parte do comando. Ele indica que deverá ser adicionado todos os arquivos modificados). Para confirmar que o comando anterior funcionou, rode novamente o comando o **‘git status’**.
 
-```imagem aqui ```
+![index.js](./imagens/7.png)
 
  Por fim, realize o commit da modificação realizada com o comando **‘git commit -m “<comentário_da_alteração>”’**, seguido da atualização do repositório remoto com **‘git push origin XXX-dddd-001’**.
 
- ```imagem aqui ```
+ ![index.js](./imagens/8.png)
 
 
 ## Disponibilizando as alterações para testes do Q.A.
