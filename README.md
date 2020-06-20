@@ -200,6 +200,7 @@ Por tanto, caso você deseje atualizar a branch homolog com os commits da própr
 
 ## Apêndice C - Diagrama do resumo do processo
 
-```imagem aqui ```
+
+![Apêndice C](./imagens/c.png)
 
 
