@@ -1,8 +1,8 @@
-# Contratos de Chamadas de Api
+# Contratos de chamadas de API
 
 
 # Métodos HTTP
-Utilizaremos os seguintes [metodos HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods):
+Utilizaremos os seguintes [métodos HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods):
 * - [x] **OPTIONS** - ```O método OPTIONS é usado para descrever as opções de comunicação com o recurso de destino.```
 * - [x] **POST** - ```O método POST é utilizado para submeter uma entidade a um recurso específico, frequentemente causando uma mudança no estado do recurso ou efeitos colaterais no servidor.```
 * - [x] **PUT** - ```O método PUT substitui todas as atuais representações do recurso de destino pela carga de dados da requisição.```
@@ -18,12 +18,12 @@ Para envio de dados vamos utilizar o formato [JSON](https://www.devmedia.com.br/
 
 # Assinaturas de envio.
 
-Esses são os tipos de envios que será abordado na comunicação de frontend com backend.
+Esses são os tipos de envios que serão abordados na comunicação de Front-end com Back-end.
 
 ## Método POST
 No método [POST](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST) iremos utilizar o seguinte formato:
 
-Url de envio:
+URL de envio:
 ```fetch
 http://host/criar
 ```
@@ -44,7 +44,7 @@ Utilizaremos POST quando o contrato tenha o intuito de:
 ## Método GET
 No método [GET](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/GET) iremos utilizar o seguinte formato:
 
-url de envio
+URL de envio
 ```fetch
 http://host/consultar?nome=teste
 ```
@@ -55,7 +55,7 @@ Utilizaremos GET quando o contrato tenha o intuito de:
 ## Método PUT
 No método [PUT](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PUT) iremos utilizar o seguinte formato:
 
-Url de envio:
+URL de envio:
 ```fetch
 http://host/alterar/10
 ```
@@ -75,7 +75,7 @@ Utilizaremos PUT quando o contrato tenha o intuito de:
 ## Método DELETE
 No método [DELETE](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/DELETE) iremos utilizar o seguinte formato:
 
-Url de envio:
+URL de envio:
 ```fetch
 http://host/alterar/10
 ```
@@ -83,24 +83,37 @@ http://host/alterar/10
 Utilizaremos DELETE quando o contrato tenha o intuito de:
 * [x] Para deletar os dados
 
-# Verbos HTTP
-```O protocolo HTTP define métodos (às vezes referidos como verbos) para indicar a ação desejada a ser realizada no recurso identificado. O que este recurso representa, se são dados pré-existentes ou dados gerados dinamicamente, depende da implementação do servidor. Muitas vezes, o recurso corresponde a um arquivo ou a saída de um executável residente no servidor. (fonte Wikipedia)```
+# Respostas HTTP
 
-Utilizaremos os seguintes [verbos HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status):
+Os códigos de status das respostas HTTP indicam se uma requisição HTTP foi corretamente concluída. 
+As respostas são agrupadas em cinco classes:
 
-* - [x] **201** - ```A requisição foi bem sucedida e um novo recurso foi criado como resultado. Esta é uma tipica resposta enviada após uma requisição POST.```
-* - [x] **200** - ```Estas requisição foi bem sucedida. O significado do sucesso varia de acordo com o método HTTP```
+Respostas de informação (100-199),
+Respostas de sucesso (200-299),
+Redirecionamentos (300-399)
+Erros do cliente (400-499)
+Erros do servidor (500-599).
+
+Os status abaixo são definidos pela seção 10 da RFC 2616. 
+Você pode encontrar uma versão atualizada da especificação na RFC 7231.
+
+(fonte MDN)
+
+Utilizaremos os seguintes [status HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status):
+
+* - [x] **201** - ```A requisição foi bem sucedida e um novo recurso foi criado como resultado. Esta é uma típica resposta enviada após uma requisição POST.```
+* - [x] **200** - ```Esta requisição foi bem sucedida. O significado do sucesso varia de acordo com o método HTTP```
 * - [x] **400** - ```Essa resposta significa que o servidor não entendeu a requisição pois está com uma sintaxe inválida.```
 * - [x] **401** - ```Embora o padrão HTTP especifique "unauthorized", semanticamente, essa resposta significa "unauthenticated". Ou seja, o cliente deve se autenticar para obter a resposta solicitada.```
 * - [x] **404** - ```O servidor não pode encontrar o recurso solicitado. Este código de resposta talvez seja o mais famoso devido à frequência com que acontece na web.```
 * - [x] **403** - ```O cliente não tem direitos de acesso ao conteúdo portanto o servidor está rejeitando dar a resposta. Diferente do código 401, aqui a identidade do cliente é conhecida.```
 * - [x] **500** - ```O servidor encontrou uma situação com a qual não sabe lidar.```
 
-Todos os responses da API terá que vim no status code do [headers](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers).
+Todas as responses da API deverão vir com o status no [headers](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers).
 
 
-# Retorno Esperados
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 200/201.
+# Retornos esperados
+Retorno da API no caso de [Status Code](https://httpstatuses.com/) 200/201.
 
 ```json
 {
@@ -108,7 +121,7 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 200/201.
 }
 ```
 
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 400 com parâmetros inválidos ou nulos.
+Retorno da API no caso de [Status Code](https://httpstatuses.com/) 400 com parâmetros inválidos ou nulos.
 
 ```json 
 {
@@ -121,7 +134,7 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 400 com parâ
 ```
 
 
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 404 com erro.
+Retorno da API no caso de [Status Code](https://httpstatuses.com/) 404 com erro.
 
 ```json
   {
@@ -133,7 +146,7 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 404 com erro.
   }
 ```
 
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 401 com erro.
+Retorno da API no caso de [Status Code](https://httpstatuses.com/) 401 com erro.
 
 ```json
 {
@@ -146,7 +159,7 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 401 com erro.
 ```
 
 
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 403 com erro.
+Retorno da API no caso de [Status Code](https://httpstatuses.com/) 403 com erro.
 
 ```json
   {
@@ -158,7 +171,7 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 403 com erro.
   }
 ```
 
-Retorno da api em caso de [Status Code](https://httpstatuses.com/) 500 com erro.
+Retorno da API no caso de [Status Code](https://httpstatuses.com/) 500 com erro.
 
 ```json
   {
@@ -171,6 +184,6 @@ Retorno da api em caso de [Status Code](https://httpstatuses.com/) 500 com erro.
 ```
 
 # Tempo de requisição
-As requisições feitas para api terá o [timeout](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/408) de 3 segundos.
+As requisições feitas para API terão o [timeout](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/408) de 3 segundos.
 
 
